@@ -14,8 +14,7 @@ pnpm-debug.log*
 # Runtime/Cache
 run/
 .eslintcache
-.package-lock.json
-package-lock.json
+
 
 # Build outputs
 dist/
