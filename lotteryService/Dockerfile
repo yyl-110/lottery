@@ -8,7 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm config set registry https://registry.npmmirror.com && \
+    npm install --no-audit --no-fund
 
 # Copy the rest of the application code
 COPY . .
