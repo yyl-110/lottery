@@ -1,0 +1,51 @@
+# Dependency directories
+node_modules/
+.pnpm-store
+.yalc
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime/Cache
+run/
+.eslintcache
+.package-lock.json
+package-lock.json
+
+# Build outputs
+dist/
+.next
+.nuxt
+.vercel
+.svelte-kit
+.solid
+.vite
+.vitepress
+
+# IDE/Editor
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Coverage
+coverage/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Compiled files in lotteryService (Egg.js TS)
+# We ignore .js files in specific directories to avoid "duplicate proto" errors
+lotteryService/app/**/*.js
+lotteryService/test/**/*.js
+lotteryService/config/**/*.js
+lotteryService/app/**/*.map
+lotteryService/test/**/*.map
+lotteryService/config/**/*.map
