@@ -1,0 +1,28 @@
+// 全局样式
+page {
+  font-family: 'Inter', 'Roboto', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, sans-serif;
+  background-color: #f7f8fa;
+  box-sizing: border-box;
+}
+
+// 通用颜色和美学设计变量
+$primary-color: #EF4444; // 耀眼红
+$blue-color: #3B82F6; // 清晰蓝
+$bg-gradient: linear-gradient(135deg, #fff1eb 0%, #ace0f9 100%);
+$card-bg: rgba(255, 255, 255, 0.85);
+
+// 玻璃拟态公用类
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(45deg, #FF6B6B, #FA5252);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

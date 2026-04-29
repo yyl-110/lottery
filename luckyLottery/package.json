@@ -1,0 +1,36 @@
+{
+  "name": "lucky-lottery",
+  "version": "1.0.0",
+  "description": "Lucky Lottery Mini Program",
+  "main": "index.js",
+  "scripts": {
+    "build:weapp": "export NODE_OPTIONS=--openssl-legacy-provider && taro build --type weapp",
+    "dev:weapp": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build:weapp -- --watch",
+    "build:h5": "export NODE_OPTIONS=--openssl-legacy-provider && taro build --type h5",
+    "dev:h5": "export NODE_OPTIONS=--openssl-legacy-provider && npm run build:h5 -- --watch"
+  },
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "@tarojs/components": "3.4.14",
+    "@tarojs/plugin-framework-vue3": "3.4.14",
+    "@tarojs/router": "^3.4.14",
+    "@tarojs/runtime": "3.4.14",
+    "@tarojs/taro": "3.4.14",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@tarojs/cli": "3.4.14",
+    "@tarojs/mini-runner": "3.4.14",
+    "@tarojs/webpack-runner": "3.4.14",
+    "@types/webpack-env": "^1.13.6",
+    "@vue/compiler-sfc": "^3.2.45",
+    "babel-preset-taro": "3.4.14",
+    "eslint": "^8.12.0",
+    "sass": "^1.50.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.0",
+    "vue-loader": "^17.0.0"
+  }
+}

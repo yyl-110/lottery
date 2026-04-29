@@ -1,0 +1,34 @@
+2026-04-29 14:25:48,659 INFO 65745 [master] node version v22.16.0
+2026-04-29 14:25:48,659 INFO 65745 [master] egg version 4.0.10
+2026-04-29 14:25:50,319 INFO 65745 [master] agent_worker#1:65746 started (1653ms)
+2026-04-29 14:25:51,825 ERROR 65748 [app_worker] server got error: bind EADDRINUSE null:7001, code: EADDRINUSE
+[2026-04-29 14:25:51.835] [cfork:master:65745] worker:65748 disconnect (exitedAfterDisconnect: false, state: disconnected, isDead: false, worker.disableRefork: true, isSlave: false, slaveIndex: )
+[2026-04-29 14:25:51.835] [cfork:master:65745] don't fork, because worker:65748 will be kill soon
+[2026-04-29 14:25:51.835] [cfork:master:65745] worker:65748 exit (code: 0, exitedAfterDisconnect: false, state: dead, isDead: true, isExpected: false, worker.disableRefork: true, isSlave: false, slaveIndex: )
+2026-04-29 14:25:51,840 ERROR 65745 nodejs.AppWorkerDiedError: [master] app_worker#1:65748 died (code: 0, signal: null, suicide: false, state: dead), current workers: [65748]
+    at Master.onAppExit (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/master.ts:423:21)
+    at Master.emit (node:events:518:28)
+    at Master.emit (node:domain:489:12)
+    at Messenger.sendToMaster (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/messenger.ts:165:18)
+    at Messenger.send (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/messenger.ts:129:12)
+    at EventEmitter.<anonymous> (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/mode/impl/process/app.ts:119:22)
+    at EventEmitter.emit (node:events:530:35)
+    at EventEmitter.emit (node:domain:489:12)
+    at ChildProcess.<anonymous> (node:internal/cluster/primary:188:13)
+    at Object.onceWrapper (node:events:633:26)
+name: "AppWorkerDiedError"
+pid: 65745
+hostname: yanyulongdeMacBook-Air.local
+
+2026-04-29 14:25:51,840 ERROR 65745 [master] app_worker#1:65748 start fail, exiting with code:1
+2026-04-29 14:25:51,840 ERROR 65745 [master] exit with code:1
+2026-04-29 14:25:51,850 ERROR 65746 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+2026-04-29 14:25:51,852 ERROR 65746 [agent_worker] exit with code:110
+    Error: /Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@egg
+    js/bin/dist/scripts/start-cluster.cjs 
+    {"baseDir":"/Users/yyl/Desktop/project/lottery/lotteryService","workers":1
+    ,"port":7001,"framework":"/Users/yyl/Desktop/project/lottery/lotteryServic
+    e/node_modules/egg","typescript":true,"tscompiler":"/Users/yyl/Desktop/pro
+    ject/lottery/lotteryService/node_modules/ts-node/register/index.js"} exit 
+    with code 1
+    Code: 1

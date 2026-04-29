@@ -1,0 +1,45 @@
+2026-04-29 14:21:55,722 INFO 64949 [master] node version v22.16.0
+2026-04-29 14:21:55,722 INFO 64949 [master] egg version 4.0.10
+2026-04-29 14:21:57,313 INFO 64949 [master] agent_worker#1:64950 started (1584ms)
+2026-04-29 14:21:58,792 ERROR 64952 [app_worker] exit with code:1
+Error: duplicate proto: homeController@/Users/yyl/Desktop/project/lottery/lotteryService/app/module/bar
+    at GlobalGraph.addModuleNode (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/tegg-metadata/src/model/graph/GlobalGraph.ts:86:15)
+    at Function.create (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/tegg-metadata/src/model/graph/GlobalGraph.ts:268:13)
+    at EggModuleLoader.buildAppGraph (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/tegg-plugin/lib/EggModuleLoader.ts:42:31)
+    at new EggModuleLoader (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/tegg-plugin/lib/EggModuleLoader.ts:16:52)
+    at new ModuleHandler (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/tegg-plugin/lib/ModuleHandler.ts:23:27)
+    at App.configDidLoad (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/tegg-plugin/app.ts:34:30)
+    at Lifecycle.triggerConfigDidLoad (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/core/src/lifecycle.ts:276:14)
+    at Lifecycle.triggerConfigWillLoad (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/core/src/lifecycle.ts:268:10)
+    at AppWorkerLoader.loadCustomApp (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/core/src/loader/egg_loader.ts:1283:20)
+    at async AppWorkerLoader.load (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/egg/src/lib/loader/AppWorkerLoader.ts:32:5)
+[2026-04-29 14:21:58.805] [cfork:master:64949] worker:64952 disconnect (exitedAfterDisconnect: false, state: disconnected, isDead: false, worker.disableRefork: true, isSlave: false, slaveIndex: )
+[2026-04-29 14:21:58.805] [cfork:master:64949] don't fork, because worker:64952 will be kill soon
+[2026-04-29 14:21:58.806] [cfork:master:64949] worker:64952 exit (code: 1, exitedAfterDisconnect: false, state: dead, isDead: true, isExpected: false, worker.disableRefork: true, isSlave: false, slaveIndex: )
+2026-04-29 14:21:58,811 ERROR 64949 nodejs.AppWorkerDiedError: [master] app_worker#1:64952 died (code: 1, signal: null, suicide: false, state: dead), current workers: [64952]
+    at Master.onAppExit (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/master.ts:423:21)
+    at Master.emit (node:events:518:28)
+    at Master.emit (node:domain:489:12)
+    at Messenger.sendToMaster (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/messenger.ts:165:18)
+    at Messenger.send (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/messenger.ts:129:12)
+    at EventEmitter.<anonymous> (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/mode/impl/process/app.ts:119:22)
+    at EventEmitter.emit (node:events:530:35)
+    at EventEmitter.emit (node:domain:489:12)
+    at ChildProcess.<anonymous> (node:internal/cluster/primary:188:13)
+    at Object.onceWrapper (node:events:633:26)
+name: "AppWorkerDiedError"
+pid: 64949
+hostname: yanyulongdeMacBook-Air.local
+
+2026-04-29 14:21:58,811 ERROR 64949 [master] app_worker#1:64952 start fail, exiting with code:1
+2026-04-29 14:21:58,811 ERROR 64949 [master] exit with code:1
+2026-04-29 14:21:58,820 ERROR 64950 [agent_worker] receive disconnect event on child_process fork mode, exiting with code:110
+2026-04-29 14:21:58,822 ERROR 64950 [agent_worker] exit with code:110
+    Error: /Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@egg
+    js/bin/dist/scripts/start-cluster.cjs 
+    {"baseDir":"/Users/yyl/Desktop/project/lottery/lotteryService","workers":1
+    ,"port":7001,"framework":"/Users/yyl/Desktop/project/lottery/lotteryServic
+    e/node_modules/egg","typescript":true,"tscompiler":"/Users/yyl/Desktop/pro
+    ject/lottery/lotteryService/node_modules/ts-node/register/index.js"} exit 
+    with code 1
+    Code: 1

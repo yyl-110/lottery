@@ -1,0 +1,19 @@
+services:
+  lottery-service:
+    build: .
+    container_name: lottery-service
+    restart: always
+    ports:
+      - "7002:7001"
+    environment:
+      - NODE_ENV=production
+      - EGG_SERVER_ENV=prod
+    volumes:
+      - ./logs:/app/logs
+      - ./run:/app/run
+    networks:
+      - lottery-network
+
+networks:
+  lottery-network:
+    driver: bridge

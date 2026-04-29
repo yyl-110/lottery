@@ -1,0 +1,51 @@
+2026-04-29 15:05:36,229 INFO 70489 [master] node version v22.16.0
+2026-04-29 15:05:36,229 INFO 70489 [master] egg version 4.0.10
+2026-04-29 15:05:37,835 ERROR 70490 nodejs.TSError: [tegg/loader] load /Users/yyl/Desktop/project/lottery/lotteryService/app/module/lottery/index.ts failed: ⨯ Unable to compile TypeScript:
+app/module/lottery/service/LotteryService.ts(53,51): error TS2322: Type 'number' is not assignable to type 'boolean | void'.
+app/module/lottery/service/LotteryService.ts(59,51): error TS2322: Type 'number' is not assignable to type 'boolean | void'.
+app/module/lottery/service/LotteryService.ts(63,51): error TS2322: Type 'number' is not assignable to type 'boolean | void'.
+
+app/module/lottery/service/LotteryService.ts(53,51): error TS2322: Type 'number' is not assignable to type 'boolean | void'.
+app/module/lottery/service/LotteryService.ts(59,51): error TS2322: Type 'number' is not assignable to type 'boolean | void'.
+app/module/lottery/service/LotteryService.ts(63,51): error TS2322: Type 'number' is not assignable to type 'boolean | void'.
+
+    at createTSError (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1895:10
+    at Object.require.extensions.<computed> [as .ts] (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+diagnosticCodes: [2322,2322,2322]
+pid: 70490
+hostname: yanyulongdeMacBook-Air.local
+
+2026-04-29 15:05:37,835 ERROR 70490 [agent_worker] start error, exiting with code:1
+2026-04-29 15:05:37,850 ERROR 70489 nodejs.AgentWorkerDiedError: [master] agent_worker#1:70490 died (code: 0, signal: null)
+    at Master.onAgentExit (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/master.ts:338:17)
+    at Master.emit (node:events:518:28)
+    at Master.emit (node:domain:489:12)
+    at Messenger.sendToMaster (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/messenger.ts:165:18)
+    at Messenger.send (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/messenger.ts:129:12)
+    at ChildProcess.<anonymous> (/Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@eggjs/cluster/src/utils/mode/impl/process/agent.ts:94:22)
+    at Object.onceWrapper (node:events:633:26)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess.emit (node:domain:489:12)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:293:12)
+name: "AgentWorkerDiedError"
+pid: 70489
+hostname: yanyulongdeMacBook-Air.local
+
+2026-04-29 15:05:37,850 ERROR 70489 [master] agent_worker#1:70490 start fail, exiting with code:1
+2026-04-29 15:05:37,850 ERROR 70489 [master] exit with code:1
+    Error: /Users/yyl/Desktop/project/lottery/lotteryService/node_modules/@egg
+    js/bin/dist/scripts/start-cluster.cjs 
+    {"baseDir":"/Users/yyl/Desktop/project/lottery/lotteryService","workers":1
+    ,"port":7001,"framework":"/Users/yyl/Desktop/project/lottery/lotteryServic
+    e/node_modules/egg","typescript":true,"tscompiler":"/Users/yyl/Desktop/pro
+    ject/lottery/lotteryService/node_modules/ts-node/register/index.js"} exit 
+    with code 1
+    Code: 1

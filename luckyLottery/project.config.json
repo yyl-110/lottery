@@ -1,0 +1,52 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "lucky-lottery",
+  "description": "Lucky Lottery",
+  "appid": "touristappid",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "lazyloadPlaceholderEnable": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.19.4",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}
